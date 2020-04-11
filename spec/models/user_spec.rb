@@ -18,6 +18,7 @@ RSpec.describe User, type: :model do
       expect(user.disp_name).to eq "さとる君"
     end
 
+    
     it "年齢20：ユーザの名前が「〜さん」と取得できること" do
       params.merge!(age:20)
       user = User.new(params)
